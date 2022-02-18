@@ -6,6 +6,8 @@ import {
 } from "gmate"
 
 export default function Gmate (props) {
+    const soal = props.soalByKey.S15    
+
     return (
         <div style={{
             padding: '1rem',
@@ -16,12 +18,12 @@ export default function Gmate (props) {
             <h1>Tes Gmate {props.dfSoal.length}</h1>
             <pre>{JSON.stringify(props.leaders)}</pre>
             {/* <pre>{JSON.stringify(props.soalByKey, null, 2)}</pre> */}
-            <p>{props.soalByKey.S23.konten}</p>
-            <p>{props.soalByKey.S23.a}</p>
-            <p>{props.soalByKey.S23.b}</p>
-            <p>{props.soalByKey.S23.c}</p>
-            <p>{props.soalByKey.S23.d}</p>
-            <p>{props.soalByKey.S23.e}</p>
+            <p>{soal.konten}</p>
+            <p>{soal.a}</p>
+            <p>{soal.b}</p>
+            <p>{soal.c}</p>
+            <p>{soal.d}</p>
+            <p>{soal.e}</p>
         </div>
     )
 }
